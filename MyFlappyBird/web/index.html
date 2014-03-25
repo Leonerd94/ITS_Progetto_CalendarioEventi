@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <meta charset="utf-8" />
+  <title>Flappy Bird Clone</title>
+
+  <style>
+    #game_div, p {
+      width: 400px;
+      margin: auto;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="Scripts/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="Scripts/phaser.min.js"></script>
+  <script type="text/javascript" src="Scripts/main.js"></script>
+</head>
+
+<body onload="aggiornaPunteggi()">
+    
+    
+    <div style="text-align:center">
+        <p>Enter your name</p>
+        <input type="text" id="giocatore" />
+        <input type="button" id="startGame" value="Start Game" onclick="startGame()" />
+    
+        <p>Press the spacebar to jump</p>
+
+        <div><div id="game_div"> </div></div>
+        <div>
+            <table id='scores'>
+            <thead>
+                <tr>
+                <th>Player</th>
+                <th>Scores</th>
+                <th>Time</th>
+                </tr>
+            </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
